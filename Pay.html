@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pay.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link rel="stylesheet" href="pay.css">
+
+
+</head>
+<body>
+
+<div class="container">
+
+    <form action="" method="post" >
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Purchasing Tickets</h3>
+
+                <div class="inputBox">
+                    <label for="Full Name">Full Name:</label>
+                    <input class="java"  id="Full Name" type="text" name="Full Name" placeholder="Ahmed Ali.." >
+                </div>
+                <div class="inputBox">
+                   <label for="email">E-mail</label>
+                    <input class="java" id="email" type="email" name="email" placeholder="example@example.com">
+                </div>
+                <div class="inputBox">
+                    <label for="adress">Address:</label>
+                    <input class="java" id="address" type="text" name="address"  placeholder="Saeed st">
+                </div>
+                <div class="inputBox">
+                    <label for="city">City:</label>
+                    <input class="java" id="city" type="text" name="city"  placeholder="Tanta">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <label for="state">State:</label>
+                        <input class="java" id="state" type="text" name="state"  placeholder="Egypt">
+                    </div>
+                    <div class="inputBox">
+                        <label for="zip code">Zip Code:</label>
+                        <input class="java" type="text" placeholder="123 456" id="zip">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <label for="cards accepted :">Cards Accepted:</label>
+                    <img src="card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <label for="name on card">Name On The Card:</label>
+                    <input class="java" id="name on card" type="text" name="name on card"  placeholder="AHMED ALI" required>
+                </div>
+                <div class="inputBox">
+                    <label for="credit number">Number Of The Card:</label>
+                    <input class="java" id="credit number" type="number" name="credit number"  placeholder="1111-2222-3333-4444" required >
+                    
+                </div>
+                <div class="inputBox">
+                    <label for="exp month">Exp month:</label>
+                    <select class="java" name="exp month" id="exp month"  required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <label for="exp year">Exp year:</label>
+                        <select class="java" name="exp year" id="exp year" required>
+                            <option value="2023">23</option>
+                            <option value="2024">24</option>
+                            <option value="2025">25</option>
+                            <option value="2026">26</option>
+                            <option value="2027">27</option>
+                            <option value="2028">28</option>
+                            <option value="2029">29</option>
+                            <option value="2030">30</option>
+                        </select>
+                    </div>
+                    <div class="inputBox">
+                        <label for="cvv">CVV:</label>
+                         <input class="java" type="number" name="cvv" id="cvv" placeholder="000" required >
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+     <button type="button" class="submit-button" onclick="validateRegistration()">PAY NOW!</button> 
+     
+
+    </form>
+    <script>
+        function validateRegistration() {
+      // Get input values
+      const fullname = document.getElementById('Full Name').value;
+      const email = document.getElementById('email').value;
+      const address = document.getElementById('address').value;
+      const city = document.getElementById('city').value;
+      const state = document.getElementById('state').value;
+      const zip = document.getElementById('zip').value;
+      const nameoncard  = document.getElementById('name on card').value;
+      const cardnumber  = document.getElementById('credit number').value;
+      const expmonth  = document.getElementById('exp month').value;
+      const expyear  = document.getElementById('exp year').value;
+      const cvv = document.getElementById('cvv').value;
+
+      // Check if inputs are empty
+      if (fullname === '' || email === ''||address===''||city===''||state===''|| zip===''||nameoncard===''||cardnumber===''||expmonth===''||expyear===''||cvv==='') {
+        // Show a SweetAlert for empty fields
+        Swal.fire({
+          icon: 'error',
+          title: 'Empty Fields',
+          text: 'Please fill out all fields before submitting.',
+        });
+      } else {
+        // Your registration validation logic goes here
+
+        // For example, showing a SweetAlert on successful registration
+        Swal.fire({
+          icon: 'success',
+          title: 'Registration Successful!',
+          text: 'You have successfully registered.',
+        });
+      }
+    }
+       
+    </script>
+</div>    
+
+    
+</body>
+</html>

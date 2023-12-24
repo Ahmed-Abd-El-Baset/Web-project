@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Reistration-Form.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="form">
+        <form  method="post" action="form.php">
+            <h1 class="form-name">Registration Form</h1>
+            <label class="label" for="Name">Name:</label>
+            <input class="input" type="text" name="Name" id="Name" required placeholder="Your Name"><br>
+            <label class="label" for="adress">Address:</label>
+            <input class="input" type="text" name="Address" id="adress" required placeholder="Adress"><br>
+            <!-- <label class="label-radio" for="male">Male</label>
+            <input class="radio-btn" type="radio" name="gender" id="male" value="m"required>
+            <label class="label-radio" for="female">Female</label>
+            <input class="radio-btn" type="radio" name="gender" id="female"value="f"required disabled><br> -->
+            <label class="label" for="gmail">Gmail:</label>
+            <input class="input" type="email" name="gmail" id="gmail"required placeholder="@gmail.com"><br>
+            <label class="label" for="phone">Phone Number:</label>
+            <input class="input" type="tel" name="phone" id="phone"required placeholder="123-45-678"><br>
+            <label class="label" for="age">Age:</label>
+            <input class="input" type="number" name="age" id="age" max="40" min="21" placeholder="Age" max="45" required><br>
+            <label class="label" for="weight and height" >Choose Your Class:</label>
+            <select name="weightandheight" id="weight and height" required>
+                <optgroup label="Class A">
+                <option value="163cm..72kg">163cm..72kg</option>
+                <option value="165cm..75kg">165cm..75kg</option>
+                <option value="168cm..77kg">168cm..77kg</option>
+                <option value="170cm..79kg">170cm..79kg</option>
+                </optgroup>
+                <optgroup label="Class B">
+                    <option value="173cm..82kg">173cm..82kg</option>
+                    <option value="175cm..86kg">175cm..86kg</option>
+                    <option value="178cm..89kg">178cm..89kg</option>
+                </optgroup>
+                <optgroup label="Class C">
+                    <option value="180cm..93kg">180cm..93kg</option>
+                    <option value="183cm..96kg">183cm..96kg</option>
+                </optgroup>
+            </select>
+            <br>
+            <label class="label" for="Companion">Number of Companion:</label>
+            <input class="input" type="number" name="Companion" id="Companion" max="3" required> <br>
+            <input class="btn" type="submit" name="btn">
+            <input class="btn" type="reset" value="Reset">
+            
+           
+            </form>
+    
+    </div>
+    
+       
+</body>
+</html>

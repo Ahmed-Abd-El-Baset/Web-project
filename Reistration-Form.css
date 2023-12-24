@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}body{
+    position: relative;
+    min-height: 100vh;
+    
+    color: bisque;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:  cover;
+    
+}
+.form{
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    margin: 0 10px;
+    transform: translate(-50%, -50%);
+    border: 8px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    width: 30rem ; 
+    padding:20px ;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .1);
+
+}
+
+.form-name{
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+.label{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 10px;
+   
+}
+.label-radio{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 10px;
+}.input{
+background-color: rgba(23, 90, 105, 0.496);
+font-size: 16px;
+width: 95%;
+padding: 10px;
+ margin: 5px; 
+border-radius: 20px;
+color: bisque;
+outline: none;
+}.label-radio{
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 10px;
+}.radio-btn{
+    margin: 10px;
+    padding: 10px;
+    ;
+}.btn{
+    background-color: silver;
+    width:40%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 27%;
+    border-radius:50px ;
+    font-size: large;
+    font-weight: 900;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+::placeholder{
+    font-size: 16px;
+ } 
+ select{
+    background-color: bisque;
+    margin-left: 5%;
+ }
+@media(max-width:575px){
+    .form{
+        width: 25rem;
+        
+    }
+} 
+
+/* 212 &open */
+.label2{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 900;
+    margin: 10px;
+    /* width: 25%; */
+}
+.input2{
+
+background-color: rgba(23, 90, 105, 0.496);
+font-size: 16px;
+width: 10%;
+padding: 10px;
+margin: 5px; 
+border-radius: 20px;
+color: bisque;
+outline: none;
+}
+/* 212 &open */

@@ -1,0 +1,249 @@
+*{
+padding:0px;
+margin: 0px;
+}
+body{
+    padding-left: 300px;
+    padding-right: 300px;
+    background-color: rgb(207, 194, 194) ;
+    background-image: url(back2\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    background:linear-gradient(#cb7825a1,#cfb192a1 ) ;    /* border-radius: 20px; */
+    position: relative;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 10%;
+    margin: 10px 20px;
+}
+.ul1{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    direction: none;
+}
+.ul1 li{
+    width: 100px;
+}
+.ul1 li a{
+    /* float: left; */
+    margin: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.ul1 li a img{
+
+    width: 3rem;
+}
+.home-nav{
+    display: flex;
+    position: absolute;
+    left: 48%;
+    margin: 5px 0px;
+
+}
+.home-nav a{
+    justify-content: space-between;
+    margin: 100%;
+    text-decoration:none;
+    color: rgb(119, 0, 255);
+    font-size: xx-large;
+}
+.home-nav a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+}
+/* end nav */
+/* body */
+.content{
+color:rgb(0, 0, 0);
+line-height: 70px;
+background-color: #cfb192a1 ;
+padding: 0;
+margin: 0%;
+}
+.content h2  { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 32px;
+}.content p{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    font-size: 20px;
+    
+}
+.content h3{
+    color: rgb(165, 5, 5);
+    text-decoration: underline;
+    font-size: larger;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    font-style: italic
+}.fh{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    
+}
+.list{display: flex;
+    background-color: #cfb192a1 ;
+}
+.ul2 li a{
+    color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background: darkblue;
+        padding: 15px 40px;
+        margin: 0 11.5px;
+        border-radius: 40px;
+        /* position: relative; */
+        /* z-index: 10; */
+}
+.ul2 li{
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.ul2 li a:hover{
+    color: burlywood;
+    transition: .6s;
+    background-color: rgb(7, 7, 218);
+    scale: 1.1;
+    transition: 1s;
+}.footer{
+    
+      background-color:#cfb192a1 ;
+      
+}
+.sponsers{  display: inline;
+    position:relative;
+    margin-left: 20px;
+    justify-content: center;
+    flex-wrap:wrap
+}
+
+.alert{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(207, 194, 194, 0);
+}.alert{
+    color: rgb(165, 5, 5);
+    font-size: xx-large;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-style: italic;
+}.sponsers img{
+    width: 100px;
+    margin: 50px;
+    padding: 20px;
+}.sponsers img:hover,.parteners img:hover{
+    scale: 1.5;
+        transition: 1s;
+}
+.parteners img{
+    width: 100px;
+    margin: 100px;
+    padding: 20px;
+}  
+.logo-footer{
+    padding-top: 50px;
+    width: 20%;
+    margin-left: 70%;
+    
+}
+.last{
+    /* background:linear-gradient(#cfb192a1,#cb7825a1 ) ; */
+    
+}
+.logo-footer{
+    position: relative;
+    margin-left: 40%;
+    transition: 0.5s;
+}
+.logo-footer:hover{
+    scale: 1.1;
+}
+.last p b{
+    font-size: xx-large;
+    margin-left:41% ;
+    color: rgb(165, 5, 5);
+}
+.last-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 60%; */
+    
+    
+}.last-social a img{
+    position: relative;
+    padding: 50px ;
+    margin-left: 30%;
+    width: 20%;
+    
+}
+.end {
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-wrap: wrap;
+}.end li {
+    list-style: none;
+    margin: 20px;
+   
+}
+.end li a{
+ text-decoration: none;
+    color: red;
+}
+.end-p{
+    background-color: rgb(56, 54, 54);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.top{
+    background-color:rgb(93, 91, 91) ;
+    padding:5px ;
+}
+.top a{
+    text-decoration: none;
+    font-size: larger;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+        
+    
+ 
+    
+

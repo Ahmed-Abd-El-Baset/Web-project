@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="Tickets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="form">
+        <form method="post" action="Tickets.php">
+            <h1>Buying tickets</h1>
+        <div class="box">
+                <div class="input" >
+            <input  type="text" name="Name" id="Name" required placeholder="Your Name">
+            <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="input" >
+            <input type="text" name="Address" id="address" required placeholder="Adress">
+            <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+        </div>
+        <div class="box">
+            <div class="input" >
+            <input type="email" name="gmail" id="gmail"required placeholder="@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input" >
+            <input type="tel" name="phone" id="phone"required placeholder="123-45-678">
+            <i class="fa-solid fa-phone"></i>
+            </div>
+        </div>
+        <div class="box" >
+            <div class="input">
+            <input type="number" name="age" id="age"  placeholder="Age" required >
+            <i class="fa-solid fa-hashtag"></i>
+            </div>
+            <div class="input">
+                <input type="number" name="Of_Tickets" id="NO.Of Tickets" placeholder="NO.Of Tickets" required max="3" min="1" >
+                <i class="fa-solid fa-hashtag"></i>
+            </div>
+        </div>
+            <input class="btn" name="btn" type="submit">
+            <input class="btn" type="reset">
+            </form>
+        </div>
+       
+    
+</body>
+</html>

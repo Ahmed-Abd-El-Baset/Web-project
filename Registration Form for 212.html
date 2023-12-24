@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Reistration-Form.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+    
+    <div class="form">
+        <form  method="post" action="Registration Form for 212.php">
+            <h1 class="form-name">Registration Form</h1>
+            <label class="label" for="Name">Name:</label>
+            <input class="input" type="text" name="Name" id="Name" required placeholder="Your Name"><br>
+            <label class="label" for="adress">Address:</label>
+            <input class="input" type="text" name="Address" id="adress" required placeholder="Adress"><br>
+            <!-- <label class="label-radio" for="male">Male</label>
+            <input class="radio-btn" type="radio" name="gender" id="male" value="m"required>
+            <label class="label-radio" for="female">Female</label>
+            <input class="radio-btn" type="radio" name="gender" id="female"value="f"required disabled><br> -->
+            <label class="label" for="gmail">Gmail:</label>
+            <input class="input" type="email" name="gmail" id="gmail"required placeholder="@gmail.com"><br>
+            <label class="label" for="phone">Phone Number:</label>
+            <input class="input" type="tel" name="phone" id="phone"required placeholder="123-45-678"><br>
+            <label class="label" for="age">Age:</label>
+            <input class="input" type="number" name="age" id="age" max="40" min="21" placeholder="Age" max="45" required>
+            <label class="label2" for="weight" >Your Weight(By lbs):</label>
+            <input class="input2" type="number" name="Weight" id="Weight" max="212" required>
+            <label class="label2" for="Height">Your Height(By cm):</label>
+            <input class="input2" type="number" name="Height" id="Height" required><br>
+            <label class="label" for="Companion">Number of Companion:</label>
+            <input class="input" type="number" name="Companion" id="Companion" max="3" required> <br>
+            <input class="btn" type="submit" id="submit" name="btn">
+            <input class="btn" type="reset" value="Reset">
+            
+            </form>
+            
+    </div>
+</body>
+</html>
